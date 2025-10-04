@@ -1,0 +1,58 @@
+body { margin: 0; font-family: sans-serif; }
+
+#map { height: 88vh; }
+
+#controls {
+  padding: 10px;
+  background: #f9f9f9;
+  border-bottom: 1px solid #ccc;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* 左右兩端對齊 */
+}
+
+.search-area {
+  display: flex;
+  align-items: center;
+}
+
+#controls input {
+  width: 250px; /* 固定搜尋框大小 */
+  padding: 5px;
+  margin-right: 5px;
+}
+
+#controls button {
+  padding: 6px 10px;
+  margin-right: 10px;
+}
+
+#mapLabel {
+    font-weight: bold;
+    color: #333;
+    white-space: nowrap;
+    font-size: 18px;
+    padding: 5px;
+}
+
+#info-box {
+    position: absolute;
+    bottom: 30px;
+    left: 10px;
+    z-index: 1000;
+    background-color: white;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    max-width: 300px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.4;
+    opacity: 0.5;
+}
+
+/* Optional: Add hover effect */
+#info-box:hover {
+    opacity: 1;
+}

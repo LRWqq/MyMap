@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>City Boundary Search</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="controls">
+    <div class="search-area">
+      <input id="cityInput" type="text" placeholder="Enter cities, e.g. Taipei, 新竹縣" />
+      <button id="searchBtn">Search</button>
+      <div id="loading" style="display:none;">🔄 正在查詢中...</div>
+    </div>
+    <span id="mapLabel">MultiSearch</span>
+  </div>
+
+
+  <div id="map"></div>
+
+  <div id="info-box">
+    Some regions don't have open data, so the boundary can't be displayed.
+    <br><br>
+    Try to search in different cities!
+    <br><br>
+    Polygen data Source: Nominatim
+  </div>
+
+  <footer style="height:30px; text-align:center; font-size:12px; padding:5px; color:#666;">
+    © 2025 Rong. All Rights Reserved.    Code Licensed under AGPLv3.
+  </footer>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="mapp.js"></script>
+
+  <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.14.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.14.0/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyCcBDcKz5tIN23KpL5SawpLlCQUu9nuNkI",
+          authDomain: "muiti-search-map.firebaseapp.com",
+          projectId: "muiti-search-map",
+          storageBucket: "muiti-search-map.firebasestorage.app",
+          messagingSenderId: "214502611013",
+          appId: "1:214502611013:web:1e981ef5e70bf770c4eb2c"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
+</body>
+</html>
