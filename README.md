@@ -11,7 +11,7 @@ This project was developed out of that specific need: **to quickly fetch and vis
 * **Goal:** To simplify the data lookup process from a multi-step chore into a single-action query.
 * **Data Source:** This tool utilizes **OpenStreetMap Nominatim APIs**.
 * **Current Status:** Due to the inherent limitations and incomplete nature of the open data sources, not all city boundaries (e.g., in the Australian context) are fully available. However, the tool is robust and effective for querying multiple cities, specifically demonstrating its capability with **Taiwanese city data**.
-* **Live Demo:** See the application in action here: [MultiSearch_MAP](https://muiti-search-map.firebaseapp.com/)
+* **Live Demo:** See the application in action here: [MultiSearch_MAP](multisearch-map-120f3.firebaseapp.com)
 
 ---
 
